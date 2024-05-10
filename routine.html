@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Routine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        td {
+            background-color: #fff;
+            color: #555;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        @media screen and (max-width: 600px) {
+            table {
+                border: 0;
+            }
+            table thead th {
+                border: none;
+            }
+            table tr:nth-child(even) {
+                background-color: transparent;
+            }
+            table td {
+                border: none;
+                border-bottom: 1px solid #ddd;
+                position: relative;
+                padding-left: 50%;
+            }
+            table td:before {
+                position: absolute;
+                left: 6px;
+                content: attr(data-label);
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <table>
+        
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th data-label="Saturday">Saturday</th>
+                <th data-label="Sunday">Sunday</th>
+                <th data-label="Monday">Monday</th>
+                <th data-label="Tuesday">Tuesday</th>
+                <th data-label="Wednesday">Wednesday</th>
+                <th data-label="Thursday">Thursday</th>
+                <th data-label="Friday">Friday</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Morning</td>
+                <td data-label="Saturday">Cooking</td>              
+                <td data-label="Sunday">Cooking</td>
+                <td data-label="Monday">Cooking</td>
+                <td data-label="Tuesday">10am Class</td>
+                <td data-label="Wednesday">8am Class</td>
+                <td data-label="Thursday">Cooking</td>
+                <td data-label="Friday">Cooking</td>
+            </tr>
+            
+            <tr>
+                <td>Afternoon</td>   
+                <td data-label="Saturday">General Cleaning</td>
+                <td data-label="Sunday">Watching Netflix</td>
+                <td data-label="Monday">1pm Class</td>
+                <td data-label="Tuesday">Continuation of Class</td>
+                <td data-label="Wednesday">Computer Programming Class</td>
+                <td data-label="Thursday">Cleaning after lunch</td>
+                <td data-label="Friday">Cleaning</td>
+            </tr>
+            
+            <tr>
+                <td>Evening</td>
+                <td data-label="Saturday">Washing Clothes</td>
+                <td data-label="Sunday">Ironing my clothes</td>
+                <td data-label="Monday">6pm Class</td>
+                <td data-label="Tuesday">Rest Time</td>
+                <td data-label="Wednesday">6pm Class of Rizal</td>
+                <td data-label="Thursday">Cooking (Sinigang Salmon)</td>
+                <td data-label="Friday">Cooking (Bulalo)</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Table ends here -->
+</body>
+</html>
